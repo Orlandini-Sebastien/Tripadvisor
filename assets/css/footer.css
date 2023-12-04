@@ -1,0 +1,17 @@
+footer {
+    margin-top: 40px;
+  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+  
+    background-color: #faf0ec;
+    line-height: 100px;
+}
+footer div{
+    width:fit-content;
+    font-weight: bold;
+    font-size: larger;
+}

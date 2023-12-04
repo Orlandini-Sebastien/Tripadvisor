@@ -1,0 +1,81 @@
+/* -------- main section2 -------------*/
+main section:nth-child(2){
+    height: 430px;
+    margin-top: 25px;
+    display: flex;
+}
+main section:nth-child(2) h1  {
+    display: flex;
+    justify-content: space-between;
+}
+main section:nth-child(2) h2  {
+    border: solid white 1px;  
+    position: relative;
+}
+main section:nth-child(2) h3  {
+    border: solid white 1px;     
+}
+main section:nth-child(2) h2 > img {
+    border-color: white solid 2px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: contain;
+    width: 650px;
+    height: 430px;
+    object-fit: cover;
+    object-position: center;
+}
+main section:nth-child(2) h2 ul{
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    width:fit-content;
+    border-radius: 40px;
+    border: none; 
+    background-color: black;
+    height: 40px;
+}
+main section:nth-child(2) h2 div{
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    width: 150px; 
+}
+main section:nth-child(2) h2 ul i{
+    position: relative;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    background-color: #EDEDED;
+}
+main section:nth-child(2) h2 img:not(:first-child){
+    position: absolute;
+    border-radius: 0%;
+    left: 16px;
+    width:80px;
+    height: 80px;
+    object-fit: contain;
+}
+main section:nth-child(2) h2 ul:hover{
+    background-color: #333333;
+}
+main section:nth-child(2) h2>img:first-child:hover{
+    filter: brightness(1.25);
+    cursor: pointer;
+}
+main section:nth-child(2) h3>img:hover{
+    filter: brightness(1.25);
+    cursor: pointer;
+}
+main section:nth-child(2) h3 img{
+    width: 475px;
+    height: 214px;
+    object-fit: cover;
+    object-position: center;
+}
+main section:nth-child(2) h3 img:first-child{
+ border-top-right-radius: 20px; 
+}
+main section:nth-child(2) h3 img:last-child{
+ border-bottom-right-radius: 20px;    
+}

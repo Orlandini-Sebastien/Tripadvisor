@@ -1,0 +1,132 @@
+/* -------- main section 1 -------- */
+
+/* -------- Before nav-------- */
+
+main section:first-child {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+main section:first-child h1 {
+  margin-top: 50px;
+  font-size: 54px;
+  font-weight: bold;
+  display: flex;
+}
+
+main section:first-child span {
+  color: #ff5d5d;
+}
+
+main section:first-child h2 {
+  line-height: 17px;
+  margin-top: 20px;
+  color: #333333;
+  display: flex;
+}
+main section:first-child h2 span {
+  text-decoration: underline;
+}
+
+/* -------- nav-------- */
+.main-nav {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.main-nav2 {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+}
+
+.main-nav button,
+.main-nav2 button {
+  display: flex;
+  height: 80px;
+  border-radius: 20px;
+  border-color: solid black 1px;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  justify-content: space-between;
+  align-items: top;
+
+}
+
+.main-nav button:hover,
+.main-nav2 button:hover {
+  cursor: pointer;
+  filter: invert(1);
+}
+.main-nav button div,
+.main-nav2 button div {
+  padding-top: 15px;
+
+}
+.main-nav button i,
+.main-nav2 button i {
+  padding-top: 15px;
+
+}
+main section:first-child h2 span:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1015px) {
+  main section:first-child {
+    width: 1135px;
+  }
+  .main-nav2 {
+    display: none;
+  }
+  .main-nav button {
+    width: 16%;
+  }
+}
+
+@media (max-width: 1015px) {
+  main section:first-child {
+    width: 100%;
+  }
+  .main-nav button,
+  .main-nav2 button {
+    flex: 1;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 80px;
+  }
+  #plus {
+    display: none;
+  }
+  #forums {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .main-nav2 {
+    display: none;
+  }
+  #plus {
+    display: flex;
+  }
+  #forums {
+    display: flex;
+  }
+  .main-nav button {
+    flex-shrink: 0;
+    width: 200px;
+  }
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+
+  }
+}

@@ -1,0 +1,132 @@
+/* -----header----- */
+header {
+  display: flex;
+  margin-top: 45px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* -----navigation----- */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+header nav:hover {
+  cursor: pointer;
+}
+
+/* -----bloc left----- */
+.header-bloc-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.header-bloc-left > i {
+  height: 40px;
+  margin: 15px;
+  margin-bottom: 15px;
+  width: 20px;
+  padding-right: 10px;
+  padding-top: 5px;
+  font-size: x-large;
+  display: none;
+}
+header nav img {
+  width: 190px;
+  height: 40px;
+}
+.header-bloc-left input {
+  border-radius: 20px;
+  margin-left: 30px;
+  flex: 1;
+  line-height: 30px;
+}
+.header-bloc-left input:hover {
+  cursor: text;
+}
+/* -----bloc right----- */
+.header-bloc-right {
+  width: 42%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -----button ----- */
+header nav button {
+  border-radius: 40px;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  margin: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -----button without last----- */
+header nav button:not(:last-child) {
+  background-color: white;
+  color: black;
+}
+header nav button:not(:last-child):hover {
+  cursor: pointer;
+  background-color: #ededed;
+}
+
+/* ----- last button----- */
+header nav button:last-child {
+  background-color: black;
+  color: white;
+}
+header nav button:last-child:hover {
+  cursor: pointer;
+  background: url(../img/eye.svg);
+}
+
+
+@media (min-width: 1015px) {
+  header {
+    width: auto;
+  }
+}
+@media (max-width: 1015px) and (min-width: 1000) {
+  header {
+    width: auto;
+  }
+}
+@media (max-width: 1000px) and (min-width: 760px) {
+  header nav button:not(:last-child) {
+    display: none;
+  }
+  .header-bloc-right {
+    flex-direction: row-reverse;
+    display: flex;
+  }
+  .header-bloc-left > i {
+    display: block;
+  }
+  .header-bloc-left {
+    width: 70%;
+  }
+  .header-bloc-left input {
+    width: 70%;
+  }
+}
+@media (max-width: 760px) {
+  .header-bloc-right {
+    display: none;
+  }
+  .header-bloc-left {
+    width: 70%;
+  }
+  .header-bloc-left input {
+    width: 70%;
+  }
+  .header-bloc-left > i {
+    display: block;
+  }
+}
