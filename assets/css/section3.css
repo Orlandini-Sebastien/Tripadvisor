@@ -20,6 +20,7 @@ main section:nth-child(3) p {
 }
 main section:nth-child(3) h5 {
   display: flex;
+  margin-top: 20px;
 }
 main section:nth-child(3) h5 span:not(:first-child) {
   margin-right: 5px;
