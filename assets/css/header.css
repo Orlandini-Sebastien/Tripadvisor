@@ -87,7 +87,6 @@ header nav button:last-child:hover {
   background: url(../img/eye.svg);
 }
 
-
 @media (min-width: 1015px) {
   header {
     width: auto;

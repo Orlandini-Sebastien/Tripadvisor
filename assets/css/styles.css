@@ -1,24 +1,22 @@
-@import url("advertising.css");
-@import url("header.css");
-@import url("section1.css");
-@import url("section2.css");
-@import url("section3.css");
-@import url("section4.css");
-@import url("footer.css");
+@import url('advertising.css');
+@import url('header.css');
+@import url('section1.css');
+@import url('section2.css');
+@import url('section3.css');
+@import url('section4.css');
+@import url('footer.css');
 
 body {
-    font-family: TS-Reg, sans-serif;
-    background-color: white;
-
-  }
-.container{
-    width: 1135px;
-    margin: 0 auto;
+  font-family: TS-Reg, sans-serif;
+  background-color: white;
 }
+.container {
+  width: 1135px;
+  margin: 0 auto;
+}
+
+
 ::-webkit-scrollbar {
-  filter:opacity(0);
+  width: 0;
+  height: 0;
 }
-
-
-
-

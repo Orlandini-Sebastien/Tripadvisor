@@ -22,7 +22,6 @@ main section:first-child h2 {
   line-height: 17px;
   margin-top: 20px;
   color: #333333;
-  display: flex;
 }
 main section:first-child h2 span {
   text-decoration: underline;
@@ -34,15 +33,14 @@ main section:first-child h2 span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
 }
 .main-nav2 {
-  margin: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
 }
 
 .main-nav button,
@@ -51,13 +49,13 @@ main section:first-child h2 span {
   height: 80px;
   border-radius: 20px;
   border-color: solid black 1px;
-
   font-size: 16px;
   font-weight: bold;
   text-align: left;
   justify-content: space-between;
   align-items: top;
-
+  flex-shrink: 0;
+  background-color: white;
 }
 
 .main-nav button:hover,
@@ -68,18 +66,16 @@ main section:first-child h2 span {
 .main-nav button div,
 .main-nav2 button div {
   padding-top: 15px;
-
 }
 .main-nav button i,
 .main-nav2 button i {
   padding-top: 15px;
-
 }
 main section:first-child h2 span:hover {
   cursor: pointer;
 }
 
-@media (min-width: 1015px) {
+@media (min-width: 1150px) {
   main section:first-child {
     width: 1135px;
   }
@@ -91,7 +87,7 @@ main section:first-child h2 span:hover {
   }
 }
 
-@media (max-width: 1015px) {
+@media (max-width: 1150px) {
   main section:first-child {
     width: 100%;
   }
@@ -100,7 +96,7 @@ main section:first-child h2 span:hover {
     flex: 1;
     margin-left: 1%;
     margin-right: 1%;
-    height: 80px;
+    height: 60px;
   }
   #plus {
     display: none;
@@ -120,13 +116,13 @@ main section:first-child h2 span:hover {
     display: flex;
   }
   .main-nav button {
+    min-width: 200px;
+    display: flex;
     flex-shrink: 0;
-    width: 200px;
   }
   .main-nav {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-
   }
 }

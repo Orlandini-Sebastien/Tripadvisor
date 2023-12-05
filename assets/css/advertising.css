@@ -1,34 +1,33 @@
 /* ------- advertising---------*/
 
-.pub{
-    width: 70%;
-    height: 90px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    margin-top: 30px;
-    margin-bottom: 45px;
-    border: solid black 1px;
-    background-color: #FCF9F5;
-    position: relative;
+.pub {
+  width: 70%;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  border: solid black 1px;
+  background-color: #fcf9f5;
+  position: relative;
 }
 .pub div {
-    width:fit-content;
-    font-size:28px;
-    font-weight: bold;
+  width: fit-content;
+  font-size: 28px;
+  font-weight: bold;
 }
-.pub img{
-    height: 70px;
-    border-radius: 20%;
-    border: solid rgb(212, 178, 114) 4px;
+.pub img {
+  height: 70px;
+  border-radius: 20%;
+  border: solid rgb(212, 178, 114) 4px;
 }
-.pub img:hover + div{
-    color: red;
+.pub img:hover + div {
+  color: red;
 }
 .pub i {
-    position: absolute;
-    top:8px;
-    right:8px;
-
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
