@@ -123,6 +123,9 @@ main section:first-child h2 span:hover {
   .main-nav {
     display: flex;
     flex-direction: row;
+  
+    overflow: hidden;
     overflow-x: scroll;
+ 
   }
 }

@@ -5,6 +5,7 @@
   height: 90px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
@@ -15,7 +16,7 @@
 }
 .pub div {
   width: fit-content;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: bold;
 }
 .pub img {
@@ -23,9 +24,7 @@
   border-radius: 20%;
   border: solid rgb(212, 178, 114) 4px;
 }
-.pub img:hover + div {
-  color: red;
-}
+
 .pub i {
   position: absolute;
   top: 8px;

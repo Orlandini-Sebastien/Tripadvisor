@@ -9,10 +9,16 @@
 
 
 
+html{
+  box-sizing: border-box;
+
+}
 body {
   font-family: TS-Reg, sans-serif;
   background-color: white;
   position: relative;
+  box-sizing: border-box;
+
 }
 .container {
   width: 1135px;
@@ -20,5 +26,6 @@ body {
 }
 
 ::-webkit-scrollbar {
-  color: white;
+    display: none;
 }
+ 

@@ -1,6 +1,5 @@
 
 const $ = document;
-
 $.addEventListener('DOMContentLoaded', () => {
     const button = $.querySelector("#section1-button");
     const form = $.querySelector("#form");
@@ -37,7 +36,7 @@ $.addEventListener('DOMContentLoaded', () => {
 
             // send data to backend
             const response = await axios.post("http://localhost:3000/form", data);
-            console.log(response);
+            console.log(response); 
         });
 });
 

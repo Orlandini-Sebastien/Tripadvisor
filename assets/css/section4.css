@@ -10,9 +10,9 @@ main section:nth-child(4) h1 {
 .layout {
   display: flex;
   justify-content: space-between;
-  width: 1135px;
   flex-wrap: wrap;
   flex-direction: row;
+  flex-shrink: 0;
 }
 .section4-layout-bloc {
   width: 25%;
@@ -52,6 +52,7 @@ main section:nth-child(4) h1 {
   flex-shrink: 0;
   flex-wrap: nowrap;
   width: 32%;
+  overflow: hidden;
   overflow-x: scroll;
   overflow: scroll;
 }
@@ -116,4 +117,11 @@ main section:nth-child(4) h1 {
   main section:nth-child(4) {
     width: 100%;
   }
+}
+  @media  (max-width: 760px) {
+  main section:nth-child(4) {
+    width: 100%;
+  }
+ 
+
 }
