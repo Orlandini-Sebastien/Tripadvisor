@@ -1,3 +1,4 @@
+//const axios = require('axios');
 
 const $ = document;
 $.addEventListener('DOMContentLoaded', () => {
@@ -34,7 +35,7 @@ $.addEventListener('DOMContentLoaded', () => {
             };
             console.log(data);
 
-            // send data to backend
+        
             const response = await axios.post("http://localhost:3000/form", data);
             console.log(response); 
         });
